@@ -1,0 +1,28 @@
+{
+  "name": "readmeGenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "watch": "nodemon index",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SWHorne/readmeGenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SWHorne/readmeGenerator/issues"
+  },
+  "homepage": "https://github.com/SWHorne/readmeGenerator#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chalk": "^4.0.0",
+    "inquirer": "^7.1.0",
+    "jest": "^25.5.4"
+  }
+}
