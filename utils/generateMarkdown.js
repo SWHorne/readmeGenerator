@@ -4,23 +4,11 @@ async function gitProfile(userName) {
   const { data } = await axios.get(`https://api.github.com/users/${userName}`);
 
   if (data.avatar_url != null) {
-    return `<img src="https://avatars1.githubusercontent.com/u/${data.id}?v=4" style="border-radius: 16px" width="30"/>`;
+    return `<img src="https://avatars1.githubusercontent.com/u/${data.id}?v=4" style="border-radius: 32px" width="50"/>`;
   }
-  console.log(gitProfile);
-  console.log(userName);
-  console.log(data);
-  console.log(data.avatar_url);
-  // gitProfile(userName);
+  ;
 }
 
-// async function gitEmail(userName) {
-//   const { data } = await axios.get(`https://api.github.com/users/${userName}`);
-
-//   if (data.email != null) {
-//     return `[![email]([mailto](${data.email}))]`;
-//   }
-  // console.log(data.email);
-// }
 
 function badgeChange(license) {
   switch (license) {
@@ -54,8 +42,7 @@ ${data.description}
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
-  *  [GitHub Profile Picture](#gitHubProfile)
-  *  [GitHub Email](#gitHubEmail)
+  
   
 
 ## Installation
@@ -79,17 +66,9 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions
-
-${data.userName}
-
-  ## GitHub Profile Picture
-
-  ${await gitProfile(data.userName)}
-  
-  ## GitHub Email
+Please direct any questions to GitHub user: ${data.userName}     [${await gitProfile(data.userName)}](https://github.com/${data.userName})
 
   <${data.userEmail}>
-
 `;
 }
 

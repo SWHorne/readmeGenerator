@@ -12,19 +12,16 @@ const questions = [
     message: "What is the description of your Repo?",
     name: "description",
   },
-  //   Table of Contents
   //   Installation
   {
     message: "What are the installation instructions for your Repo?",
     name: "installation",
   },
-
   //   Usage
   {
     message: "Please provide an example of the code's usage?",
     name: "usage",
   },
-
   //   License
   {
     type: "list",
@@ -42,18 +39,16 @@ const questions = [
     message: "Please explain how to test your Repo?",
     name: "tests",
   },
-  //   Questions
+  //   Questions - GitHub Username
   {
     message: "What is your GitHub username?",
     name: "userName",
   },
+  //     User GitHub email
   {
     message: "What is your email Address?",
     name: "userEmail",
   },
-
-  //     User GitHub profile picture
-  //     User GitHub email
 ];
 
 function writeToFile(fileName, data) {
